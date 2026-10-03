@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mon personnage 3D</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: #111827;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 24px 16px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(24px, 5vw, 42px);
+    }
+
+    p {
+      margin: 10px 0 0;
+      color: #d1d5db;
+    }
+
+    .conteneur-3d {
+      width: min(1200px, 100%);
+      margin: 0 auto;
+      padding: 0 16px 24px;
+    }
+
+    iframe {
+      display: block;
+      width: 100%;
+      height: 600px;
+      border: 0;
+      border-radius: 16px;
+      background: white;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    @media (max-width: 600px) {
+      iframe {
+        height: 500px;
+        border-radius: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Mon personnage 3D</h1>
+    <p>Utilise les commandes affichées dans la scène 3D.</p>
+  </header>
+
+  <main class="conteneur-3d">
+    <iframe
+      src="https://clement116.github.io/3d-perso2/"
+      title="Personnage 3D interactif"
+      allow="fullscreen; autoplay; xr-spatial-tracking"
+      allowfullscreen>
+    </iframe>
+  </main>
+</body>
+</html>
